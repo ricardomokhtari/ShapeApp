@@ -27,6 +27,7 @@ public class ShapeDB {
 
     public void drawShapes(){
         for(Shape s : shapes){
+
         }
     }
 }

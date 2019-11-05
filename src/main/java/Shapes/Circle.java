@@ -15,7 +15,6 @@ public class Circle extends Shape {
         this.rad = rad;
     }
 
-    @Override
     public void draw(Graphics g) { // A method that draws the object in g
         g.setColor(this.col);
         g.fillOval(pos.x,pos.y,rad, rad);

@@ -12,7 +12,6 @@ public class Rect extends Shape {
         this.h = h;
     }
 
-    @Override
     public void draw(Graphics g) { // A method that draws the object in g
         g.setColor(col);
         g.fillRect(pos.x, pos.y, w, h);
