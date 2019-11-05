@@ -24,6 +24,16 @@ public class Drawing extends Canvas {
         setVisible(true);
     }
 
+    public void addSquare(){
+
+    }
+
+    public void addCircle(){
+    }
+
+    public void addRect(){
+    }
+
     /*
     private void setupShapes() {
         Point p = new Point(200, 200);
