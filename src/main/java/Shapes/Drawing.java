@@ -3,16 +3,17 @@ package Shapes;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.util.ArrayList;
 
 public class Drawing extends Canvas {
+    private ShapeDB shapeDB;
     private Frame f;
     private Circle circle;
     private Rect rectangle;
     private Square square;
 
     public Drawing() {
-
-        setupShapes();
+        // setupShapes();
         setupFrame();
         setupCanvas();
         f.addWindowListener(new WindowAdapter() {    // Closes the frame if close window clicked
@@ -23,6 +24,7 @@ public class Drawing extends Canvas {
         setVisible(true);
     }
 
+    /*
     private void setupShapes() {
         Point p = new Point(200, 200);
         Color col = new Color(0x992266);
@@ -42,6 +44,7 @@ public class Drawing extends Canvas {
 
         this.square = sq;
     }
+    */
 
     private void setupCanvas() {
         setBackground(Color.WHITE); // Sets the Canvas background

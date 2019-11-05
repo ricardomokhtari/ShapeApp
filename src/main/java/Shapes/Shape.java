@@ -1,8 +1,10 @@
 package Shapes;
 
+import Interfaces.Drawable;
+
 import java.awt.*;
 
-public abstract class Shape {
+abstract public class Shape implements Drawable {
     protected Point pos;
     protected Color col;
 

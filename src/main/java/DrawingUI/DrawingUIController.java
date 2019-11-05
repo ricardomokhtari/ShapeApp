@@ -8,15 +8,11 @@ public class DrawingUIController {
     JPanel mainPanel = new JPanel();
 
     public DrawingUIController() {
-        controlsPanel.setLayout(new GridLayout(3,1));
-        mainPanel.setLayout(new GridLayout(2,1));
+        controlsPanel.setLayout(new GridLayout(3, 1));
+        mainPanel.setLayout(new GridLayout(2, 1));
     }
-
-    // this is a test
 
     public JPanel getMainPanel(){
         return mainPanel;
     }
-
-
 }
