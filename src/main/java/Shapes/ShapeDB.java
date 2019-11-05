@@ -4,7 +4,7 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class ShapeDB {
-    private ArrayList<Shape> shapes = new ArrayList<>();
+    public ArrayList<Shape> shapes = new ArrayList<>();
 
     public static double getRandomIntegerBetweenRange(double min, double max) {
         return (int)(Math.random()*((max-min)+1))+min;

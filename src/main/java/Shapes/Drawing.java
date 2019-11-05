@@ -70,8 +70,8 @@ public class Drawing extends Canvas {
     }
 
     public void paint(Graphics g) {
-        circle.draw(g);
-        rectangle.draw(g);
-        square.draw(g);
+        for(Shape s : shapeDB.shapes){
+            s.draw(g);
+        }
     }
 }
