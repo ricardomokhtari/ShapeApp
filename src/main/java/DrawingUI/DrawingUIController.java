@@ -12,6 +12,8 @@ public class DrawingUIController {
         mainPanel.setLayout(new GridLayout(2,1));
     }
 
+    // this is a test
+
     public JPanel getMainPanel(){
         return mainPanel;
     }
