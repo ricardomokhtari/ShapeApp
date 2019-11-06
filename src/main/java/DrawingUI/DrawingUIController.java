@@ -19,6 +19,7 @@ public class DrawingUIController {
         Drawing d = new Drawing();
         ShapeSelector sSel = new ShapeSelector();
         ColourSelector cSel = new ColourSelector();
+        CircleDimSelector dSel = new CircleDimSelector();
 
         d.addMouseListener(new MouseListener() {
             @Override
@@ -30,8 +31,10 @@ public class DrawingUIController {
             public void mousePressed(MouseEvent mouseEvent) {
                 String val = sSel.getCurrentShape();
                 Color col = cSel.getCurrentColour();
+                int radius = dSel.getCurrentRadius();
+
                 if(val == "Circle"){
-                    d.addCircle(new Point(mouseEvent.getPoint()), col, 50);
+                    d.addCircle(new Point(mouseEvent.getPoint()), col, radius);
                     d.repaint();
                 } else if(val == "Square"){
                     d.addSquare(new Point(mouseEvent.getPoint()), col, 50);
@@ -65,6 +68,7 @@ public class DrawingUIController {
         mainPanel.add(controlsPanel);
         controlsPanel.add(sSel);
         controlsPanel.add(cSel);
+        controlsPanel.add(dSel);
         mainPanel.add(d);
     }
 
