@@ -10,9 +10,10 @@ public class ShapeSelector extends JPanel {
     JRadioButton bSquare;
 
     public ShapeSelector() {
-        bCirc = new JRadioButton();
-        bRect = new JRadioButton();
-        bSquare = new JRadioButton();
+        bCirc = new JRadioButton("Circle");
+        bRect = new JRadioButton("Rectangle");
+        bSquare = new JRadioButton("Square");
+
 
         ButtonGroup bg = new ButtonGroup();
 
@@ -25,7 +26,6 @@ public class ShapeSelector extends JPanel {
         add(bSquare);
 
         bCirc.setSelected(true);
-
     }
 
     public String getCurrentShape() {
