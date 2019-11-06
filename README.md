@@ -6,7 +6,7 @@ All code is written in Java, following instructions written by Martin Holloway (
 
 Source code can be viewed in the src/main/java folder.
 
-Example use cases:
+## Example use cases:
 
 ### Landing Page
 ![Landing Page](https://github.com/ricardomokhtari/ShapeApp/blob/master/Images/Screenshot%202019-11-06%20at%2015.26.39.png)
