@@ -3,17 +3,12 @@ package Shapes;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.util.ArrayList;
 
 public class Drawing extends Canvas {
     private ShapeDB shapeDB;
     private Frame f;
-    private Circle circle;
-    private Rect rectangle;
-    private Square square;
 
     public Drawing() {
-        // setupShapes();
         setupFrame();
         setupCanvas();
         f.addWindowListener(new WindowAdapter() {    // Closes the frame if close window clicked
@@ -24,14 +19,16 @@ public class Drawing extends Canvas {
         setVisible(true);
     }
 
-    public void addSquare(){
-
+    void addSquare(Point pos, Color col, int side){
+        shapeDB.addSquare(pos, col, side);
     }
 
-    public void addCircle(){
+    void addCircle(Point pos, Color col, int radius){
+        shapeDB.addCircle(pos, col, radius);
     }
 
-    public void addRect(){
+    void addRect(Point pos, Color col, int w, int h){
+        shapeDB.addRect(pos,col,w,h);
     }
 
     /*
@@ -70,8 +67,6 @@ public class Drawing extends Canvas {
     }
 
     public void paint(Graphics g) {
-        for(Shape s : shapeDB.shapes){
-            s.draw(g);
-        }
+        shapeDB.drawShapes(g);
     }
 }
