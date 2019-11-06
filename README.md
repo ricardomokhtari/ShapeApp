@@ -4,6 +4,8 @@ ShapeApp is a SWING based GUI for drawing circles, squares and rectangles on a c
 
 All code is written in Java, following instructions written by Martin Holloway (Department of Bioengineering, Imperial College London) for the Programming 3 module.
 
+Source code can be viewed in the src/main/java folder.
+
 Example use cases:
 
 ### Landing Page
