@@ -4,7 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Main {
+
     static GraphicsConfiguration gc; // Class field containing config info
+
     public static void main(String[] args) {
         DrawingUIController dui = new DrawingUIController();
         JFrame frame= new JFrame(gc); // Create a new JFrame

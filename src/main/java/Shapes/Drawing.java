@@ -5,7 +5,7 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
 public class Drawing extends Canvas {
-    private ShapeDB shapeDB;
+    private ShapeDB shapeDB = new ShapeDB();
     private Frame f;
 
     public Drawing() {
@@ -19,15 +19,15 @@ public class Drawing extends Canvas {
         setVisible(true);
     }
 
-    void addSquare(Point pos, Color col, int side){
+    public void addSquare(Point pos, Color col, int side){
         shapeDB.addSquare(pos, col, side);
     }
 
-    void addCircle(Point pos, Color col, int radius){
+    public void addCircle(Point pos, Color col, int radius){
         shapeDB.addCircle(pos, col, radius);
     }
 
-    void addRect(Point pos, Color col, int w, int h){
+    public void addRect(Point pos, Color col, int w, int h){
         shapeDB.addRect(pos,col,w,h);
     }
 
