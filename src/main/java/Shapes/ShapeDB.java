@@ -3,7 +3,14 @@ package Shapes;
 import java.awt.*;
 import java.util.ArrayList;
 
+/*
+ShapeDB stores a database of shapes, you can add shapes with
+add(Shapetype) methods and the drawShapes method draws these
+shapes
+ */
+
 public class ShapeDB {
+
     public ArrayList<Shape> shapes = new ArrayList<>();
 
     // method has package-private access
