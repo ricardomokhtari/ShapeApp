@@ -72,9 +72,6 @@ public class DrawingUIController {
             }
         });
 
-        d.addCircle(new Point(20,20), new Color(0x992266), 50);
-        d.addRect(new Point(50,50), new Color(0x992266), 50, 100);
-        d.addSquare(new Point(70,70), new Color(0x992266), 50);
         mainPanel.add(controlsPanel);
 
         controlsPanel.add(sSel);
